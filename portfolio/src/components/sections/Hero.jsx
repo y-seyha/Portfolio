@@ -68,11 +68,12 @@ const Hero = () => {
           <Fadein delay={200}>
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl aspect-[4/5] max-w-[500px] ml-auto group">
+                {/* Animated gradient behind image */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                  <div className="absolute inset-[-2px] bg-linear-to-r from-primary/15 via-primary/10 to-primary/20 animate-spin-slow rounded-2xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-black to-purple-400 animate-spin-slow rounded-2xl filter blur-40 opacity-70"></div>
                 </div>
 
-                {/* Image Container  */}
+                {/* Image */}
                 <div className="relative rounded-2xl overflow-hidden m-[10px] h-[calc(100%-2px)]">
                   <img
                     src="/blob.jpeg"
