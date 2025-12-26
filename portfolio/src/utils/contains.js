@@ -20,3 +20,18 @@ export const NAV_LINK = [
   { id: "about", label: "About" },
   { id: "contact", label: "Contact" },
 ];
+
+export const STATS = [
+  {
+    label: "Years Experience",
+    value: "3+",
+  },
+  {
+    label: "Project Completed",
+    value: "4+",
+  },
+  {
+    label: "Technology",
+    value: "10+",
+  },
+];
