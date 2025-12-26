@@ -14,7 +14,7 @@ const Fadein = ({ children, delay = 0, duration = 500, threshold = 0.1 }) => {
       },
       {
         threshold: threshold,
-        rootMargin: "0px 0px -50px -0px", //trigger slighly before element
+        rootMargin: "0px 0px -50px 0px", //trigger slighly before element
       }
     );
 
