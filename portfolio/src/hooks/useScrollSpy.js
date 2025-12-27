@@ -9,7 +9,7 @@ export const useScrollSpy = (sectionIds, offset = 100) => {
 
       //find the current section
       for (let i = sectionIds.length - 1; i >= 0; i--) {
-        const section = document.getElementById("sectionIds[i");
+        const section = document.getElementById(sectionIds[i]);
         if (section) {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.offsetHeight;
