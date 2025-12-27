@@ -17,7 +17,7 @@ const Project = () => {
   };
 
   return (
-    <section id="projects" className="relative py-20 bg-black overflow-hidden">
+    <section id="project" className="relative py-20 bg-black overflow-hidden">
       {/* Header */}
       <Fadein delay={100}>
         <div className="text-center mb-16">

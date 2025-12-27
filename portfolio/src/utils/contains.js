@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  github: "",
+  github: "https://github.com/y-seyha",
   linkedin: "",
   twitter: "",
 };
