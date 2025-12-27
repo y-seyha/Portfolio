@@ -10,9 +10,9 @@ const ScrollReveal = ({
   const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
 
   const animationClasses = {
-    fadeUp: "opacity-0 translate-8",
+    fadeUp: "opacity-0 translate-y-8",
     fadeIn: "opacity-0",
-    slideLeft: "opacity-0-translate-x-12",
+    slideLeft: "opacity-0 -translate-x-12",
     slideRight: "opacity-0 translate-x-12",
     scaleIn: "opacity-0 scale-90",
   };

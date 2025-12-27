@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 
 export const useScrollReveal = (options = {}) => {
-  const { threshold = 0.1, rootMargin = "8px" } = options;
+  const { threshold = 0.1, rootMargin = "0px 0px -50px 0px" } = options;
 
-  const [isVisble, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -12,9 +12,9 @@ export const useScrollReveal = (options = {}) => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersection) {
+        if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(element);
+          observer.unobserve(element); // 🔑 stop observing after reveal
         }
       },
       {
@@ -25,10 +25,8 @@ export const useScrollReveal = (options = {}) => {
 
     observer.observe(element);
 
-    return () => {
-      if (element) observer.unobserve(element);
-    };
+    return () => observer.disconnect();
   }, [threshold, rootMargin]);
 
-  return { ref, isVisble };
+  return { ref, isVisible };
 };
