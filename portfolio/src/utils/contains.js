@@ -17,26 +17,25 @@ export const PERSONAL_INFO = {
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/y-seyha",
-  linkedin: "",
-  twitter: "",
+  linkedin: "https://www.linkedin.com/in/yoeun-seyha-742a712ba",
 };
 
 export const NAV_LINK = [
   { id: "home", label: "Home" },
+  { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "project", label: "Project" },
-  { id: "about", label: "About" },
   { id: "contact", label: "Contact" },
 ];
 
 export const STATS = [
   {
     label: "Years Experience",
-    value: "3+",
+    value: "1+",
   },
   {
     label: "Project Completed",
-    value: "4+",
+    value: "6+",
   },
   {
     label: "Technology",
@@ -45,9 +44,9 @@ export const STATS = [
 ];
 
 export const ABOUT_STATS = [
-  { label: "Happy Client", value: "45+" },
-  { label: "GitHub Stars", value: "0+" },
-  { label: "Code Commit", value: "0+" },
+  { label: "Lines of Code", value: "50k+" },
+  { label: "Projects Completed", value: "6+" },
+  { label: "Hours Coding", value: "1200+" },
 ];
 
 export const ABOUT_KNOWLEDGE = [

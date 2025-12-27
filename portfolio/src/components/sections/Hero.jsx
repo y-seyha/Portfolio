@@ -36,13 +36,14 @@ const Hero = () => {
 
             <Fadein delay={200}>
               <p className="text-lg text-white/70 max-w-[550px] mb-8">
-                Building modern website.
+                We build modern websites that not only look stunning but also
+                deliver smooth, user-friendly experiences across all devices.
               </p>
             </Fadein>
 
             <Fadein delay={300}>
               <button onClick={() => scrollToSection("contact")} className="">
-                <div className="mb-10 relative z-10 bg-white text-[#212121] rounded-[17px] px-[13px] py-[13px] text-base font-medium border border-white">
+                <div className="cursor-pointer mb-10 relative z-10 bg-white text-[#212121] rounded-[17px] px-[13px] py-[13px] text-base font-medium border border-white">
                   Get in Touch
                 </div>
               </button>
@@ -69,41 +70,35 @@ const Hero = () => {
 
           {/* Right column */}
           <Fadein delay={200}>
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl aspect-[4/5] max-w-[500px] ml-auto group">
+            <div className="relative max-w-[350px] ml-auto">
+              <div className="relative overflow-hidden rounded-2xl aspect-[4/5] group">
                 {/* Animated gradient behind image */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-black to-purple-400 animate-spin-slow rounded-2xl filter blur-40 opacity-70"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-black to-purple-400 opacity-50 animate-pulse rounded-2xl blur-3xl"></div>
                 </div>
 
                 {/* Image */}
-                <div className="relative rounded-2xl overflow-hidden m-[10px] h-[calc(100%-2px)]">
-                  <img
-                    src="/blob.jpeg"
-                    alt="Profile Image"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <img
+                  src="/profile-pic.avif"
+                  alt="Profile Image"
+                  className="relative w-full h-full object-cover rounded-2xl"
+                />
 
-                {/* Technology Logo  */}
-                <div className="absolute bottom-6 left-6 z-20">
+                {/* Technology Logo */}
+                <div className="absolute bottom-4 left-4 z-20">
                   <Fadein delay={500}>
-                    <div className="flex items-center gap-4 bg-black/40 background-blur-sm border border-white/10 rounded-full px-6 py-3 ">
-                      <div className="w-6 h-6  flex item-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiReact className="w-full h-full text-[#FFD700]" />
-                      </div>
-
-                      <div className="w-6 h-6  flex item-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiTailwindcss className="w-full h-full text-[#FFD700]" />
-                      </div>
-
-                      <div className="w-6 h-6  flex item-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiNodedotjs className="w-full h-full text-[#FFD700]" />
-                      </div>
-
-                      <div className="w-6 h-6  flex item-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiMongodb className="w-full h-full text-[#FFD700]" />
-                      </div>
+                    <div className="flex items-center gap-3 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2">
+                      {[SiReact, SiTailwindcss, SiNodedotjs, SiMongodb].map(
+                        (Icon, idx) => (
+                          <div
+                            key={idx}
+                            className="w-5 h-5 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                            aria-label="Technology Logo"
+                          >
+                            <Icon className="w-full h-full text-[#61DAFB]" />
+                          </div>
+                        )
+                      )}
                     </div>
                   </Fadein>
                 </div>

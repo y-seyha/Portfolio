@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <Fadein delay={0}>
             <div>
-              <h3 className="text-3xl font-bold bg-linear-to-r from-primary/80 via-primary to-primary/80 bg-clip-text text-transparent mb-4">
+              <h3 className="text-3xl font-bold bg-linear-to-r text-white bg-clip-text  mb-4">
                 {PERSONAL_INFO.name}
               </h3>
               <p className="text-white/60 text-sm mb-6 leading-relaxed">
@@ -117,16 +117,16 @@ const Footer = () => {
         </div>
 
         <Fadein delay={300}>
-          <div className="pt-8 border-t border-white/10 ">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-white/50 text-sm">
-                {new Date().getFullYear()} {PERSONAL_INFO.name} all right
-                reserved
+          <div className="pt-8 border-t border-white/10">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+              <p className="text-white/50 text-sm md:text-base">
+                &copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. All
+                rights reserved.
               </p>
-              <p className="flex items-center gap-2 text-white/50 text-sm">
-                Build with{" "}
-                <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" />{" "}
-                uisng React & TailwindCss
+              <p className="flex items-center justify-center md:justify-start gap-2 text-white/50 text-sm md:text-base">
+                Built with
+                <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" />
+                using React & Tailwind CSS
               </p>
             </div>
           </div>

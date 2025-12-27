@@ -52,22 +52,28 @@ const Project = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8">
         {filteredProjects.map((project, index) => (
           <Fadein key={project.id} delay={index * 100}>
-            <div className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+            <div
+              className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-lg 
+                      hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2
+                      h-[500px] flex flex-col"
+            >
               {/* Project Image */}
               {project.image && (
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover rounded-t-2xl transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-65 object-cover rounded-t-2xl transition-transform duration-500 group-hover:scale-105"
                 />
               )}
 
               {/* Project Info */}
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-4 flex-1 overflow-hidden">
                 <h3 className="text-xl font-semibold text-white">
                   {project.title}
                 </h3>
-                <p className="text-white/60 text-sm">{project.description}</p>
+                <p className="text-white/60 text-sm line-clamp-4">
+                  {project.description}
+                </p>
 
                 {/* Tech Badges */}
                 <div className="flex flex-wrap gap-2">
@@ -81,44 +87,29 @@ const Project = () => {
                   ))}
                 </div>
 
-                {/* Metrics (Optional) */}
-                {project.metrics && (
-                  <div className="mt-2">
-                    <div className="text-xs text-white/60 mb-1">
-                      {project.metrics.label}
-                    </div>
-                    <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-primary transition-all duration-1000 ease-out rounded-full"
-                        style={{ width: `${project.metrics.value}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                )}
-
-                {/* GitHub Button */}
-                {project.githubUrl && (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors mt-3"
-                  >
-                    <FiGithub className="w-4 h-4" /> View GitHub
-                  </a>
-                )}
-
-                {/* Live Demo Button */}
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors mt-3 ml-2"
-                  >
-                    <FiExternalLink className="w-4 h-4" /> Live Demo
-                  </a>
-                )}
+                {/* GitHub & Live Demo Buttons */}
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
+                    >
+                      <FiGithub className="w-4 h-4" /> View GitHub
+                    </a>
+                  )}
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
+                    >
+                      <FiExternalLink className="w-4 h-4" /> Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
 
               {/* Hover Glow */}

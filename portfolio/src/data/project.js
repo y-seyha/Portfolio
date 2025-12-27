@@ -2,23 +2,32 @@ export const projects = [
   {
     id: 1,
     title: "Ecommerce Website",
-    description: "Using Javascript",
+    description:
+      "A perfume ecommerce website built using JavaScript, HTML, and CSS. Users can browse perfumes, view product details, and add items to the cart.",
     image: "/ecommerce.png",
-    category: "FrontEnd",
+    category: "Frontend",
     technologies: ["HTML", "CSS", "Javascript"],
-    metrics: "",
+
     githubUrl: "",
   },
   {
     id: 2,
     title: "Expense Tracker",
-    description: "Using Javascript",
-    image: "/expense_tracker.png",
+    description:
+      "An Expense Tracker built using JavaScript, HTML, and CSS. It allows users to add, track, and manage their daily expenses with a clear summary of income and spending.",
+    image: "/dashboard-01-scaled.png",
     category: "FullStack",
-    technologies: ["React", "Tailwind", "NodeJS", "ExpressJS"],
-    metrics: "",
+    technologies: [
+      "React",
+      "Tailwind",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Vite",
+    ],
+
     githubUrl: "https://github.com/y-seyha/Expense-Tracker",
   },
 ];
 
-export const category = ["All", "Frontend", "UI Components", "FullStack"];
+export const category = ["All", "Frontend", "FullStack"];

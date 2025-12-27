@@ -1,4 +1,5 @@
 import { Code, Palette, Database } from "lucide-react";
+
 import {
   SiHtml5,
   SiCss3,
@@ -13,6 +14,7 @@ import {
   SiTailwindcss,
   SiGit,
   SiGithub,
+  SiBootstrap,
 } from "react-icons/si";
 import { MdApi } from "react-icons/md";
 
@@ -28,6 +30,7 @@ export const ICONS = {
   Vite: SiVite,
   Vitest: SiVitest,
   Tailwindcss: SiTailwindcss,
+  Bootstrap: SiBootstrap,
   "Git & GitHub": SiGithub,
   "REST APIs": MdApi,
 };
