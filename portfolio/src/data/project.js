@@ -7,8 +7,7 @@ export const projects = [
     image: "/ecommerce.png",
     category: "Frontend",
     technologies: ["HTML", "CSS", "Javascript"],
-
-    githubUrl: "",
+    githubUrl: "https://github.com/y-seyha",
   },
   {
     id: 2,
@@ -25,7 +24,6 @@ export const projects = [
       "MongoDB",
       "Vite",
     ],
-
     githubUrl: "https://github.com/y-seyha/Expense-Tracker",
   },
 ];
