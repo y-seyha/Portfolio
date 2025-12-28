@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   email: "yoeunseyha11@gmail.com",
   location: "Phnom Penh, Cambodia",
   tagLine: "Building modern web applications with React & Node.js",
-  resume: "",
+  resume: "/resume.pdf",
   bio: [
     "Full-stack developer with hands-on experience building responsive web applications using React, Node.js, Express, and MongoDB. I enjoy creating clean, user-friendly interfaces and writing maintainable, efficient code.",
     "Passionate about performance optimization, scalability, and implementing best practices across frontend and backend development. I thrive on solving challenging problems and learning new technologies along the way.",
