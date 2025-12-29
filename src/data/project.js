@@ -16,14 +16,7 @@ export const projects = [
       "An Expense Tracker built using Mern Stack. It allows users to add, track, and manage their daily expenses with a clear summary of income and spending.",
     image: "/dashboard-01-scaled.png",
     category: "FullStack",
-    technologies: [
-      "React",
-      "Tailwind",
-      "NodeJS",
-      "ExpressJS",
-      "MongoDB",
-      "Vite",
-    ],
+    technologies: ["React", "Tailwind", "NodeJS", "MongoDB"],
     githubUrl: "https://github.com/y-seyha/Expense-Tracker",
   },
 ];
