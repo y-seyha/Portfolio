@@ -55,7 +55,7 @@ const Project = () => {
             <div
               className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-lg 
                       hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2
-                      h-[500px] flex flex-col"
+                     h-auto md:h-[500px] flex flex-col"
             >
               {/* Project Image */}
               {project.image && (
@@ -67,7 +67,7 @@ const Project = () => {
               )}
 
               {/* Project Info */}
-              <div className="p-6 space-y-4 flex-1 overflow-hidden">
+              <div className="p-6 space-y-4 flex-1 overflow-hidden pb-8 md:pb-6 ">
                 <h3 className="text-xl font-semibold text-white">
                   {project.title}
                 </h3>
@@ -87,14 +87,13 @@ const Project = () => {
                   ))}
                 </div>
 
-                {/* GitHub & Live Demo Buttons */}
-                <div className="mt-3 flex flex-wrap gap-2">
+                <div className="mt-3 flex flex-wrap gap-2 mb-4 md:mb-0">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors md:mb-2"
                     >
                       <FiGithub className="w-4 h-4" /> View GitHub
                     </a>
@@ -112,7 +111,6 @@ const Project = () => {
                 </div>
               </div>
 
-              {/* Hover Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 group-hover:to-primary/20 transition-all duration-300 pointer-events-none"></div>
             </div>
           </Fadein>
