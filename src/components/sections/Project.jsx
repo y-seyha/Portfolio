@@ -55,19 +55,20 @@ const Project = () => {
             <div
               className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-lg 
                       hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2
-                     h-auto md:h-[500px] flex flex-col"
+                     min-h-[480px] flex flex-col
+"
             >
               {/* Project Image */}
               {project.image && (
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-65 object-cover rounded-t-2xl transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-48 sm:h-56 md:h-60 object-cover rounded-t-2xl transition-transform duration-500 group-hover:scale-105"
                 />
               )}
 
               {/* Project Info */}
-              <div className="p-6 space-y-4 flex-1 overflow-hidden pb-8 md:pb-6 ">
+              <div className="p-6 space-y-4 flex flex-col flex-1">
                 <h3 className="text-xl font-semibold text-white">
                   {project.title}
                 </h3>
