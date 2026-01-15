@@ -104,7 +104,7 @@ const Project = () => {
                       href={project.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-full text-sm font-medium hover:bg-white/10 transition-colors md:mb-2"
                     >
                       <FiExternalLink className="w-4 h-4" /> Live Demo
                     </a>

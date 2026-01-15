@@ -11,7 +11,6 @@ const App = () => {
   return (
     <div className="min-h-screen bg-black ">
       <Navbar />
-
       <main>
         <Hero />
         <About />
@@ -19,7 +18,6 @@ const App = () => {
         <Project />
         <Contact />
       </main>
-
       <Footer />
     </div>
   );

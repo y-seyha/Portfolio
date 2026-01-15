@@ -19,6 +19,17 @@ export const projects = [
     technologies: ["React", "Tailwind", "NodeJS", "MongoDB"],
     githubUrl: "https://github.com/y-seyha/Expense-Tracker",
   },
+  {
+    id: 3,
+    title: "Food Delivery",
+    description:
+      "A modern full-stack food delivery web application that allows users to browse restaurants, place orders, manage profiles, and track deliveries through a secure and user-friendly interface.",
+    image: "/food-delivery.png",
+    category: "FullStack",
+    technologies: ["React", "Tailwind", "NodeJS", "MongoDB"],
+    githubUrl: "https://github.com/y-seyha",
+    link: "https://food-delivery-app-ten-pink.vercel.app/",
+  },
 ];
 
 export const category = ["All", "Frontend", "FullStack"];
