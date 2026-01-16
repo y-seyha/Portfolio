@@ -7,7 +7,7 @@ export const projects = [
     image: "/ecommerce.png",
     category: "Frontend",
     technologies: ["HTML", "CSS", "Javascript"],
-    githubUrl: "https://github.com/y-seyha",
+    githubUrl: "https://github.com/y-seyha/Ecommerce-JavaScript",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const projects = [
     image: "/food-delivery.png",
     category: "FullStack",
     technologies: ["React", "Tailwind", "NodeJS", "MongoDB"],
-    githubUrl: "https://github.com/y-seyha",
+    githubUrl: "https://github.com/y-seyha/Food-Delivery-FrontedEnd",
     link: "https://food-delivery-app-ten-pink.vercel.app/",
   },
 ];
