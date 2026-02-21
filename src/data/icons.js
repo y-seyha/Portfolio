@@ -1,4 +1,5 @@
 import { Code, Palette, Database } from "lucide-react";
+import {} from "react-icons/si";
 
 import {
   SiHtml5,
@@ -15,6 +16,10 @@ import {
   SiGit,
   SiGithub,
   SiBootstrap,
+  SiPostgresql,
+  SiTypescript,
+  SiDocker,
+  SiJest,
 } from "react-icons/si";
 import { MdApi } from "react-icons/md";
 
@@ -27,10 +32,14 @@ export const ICONS = {
   ExpressJS: SiExpress,
   MongoDB: SiMongodb,
   MySQL: SiMysql,
+  PostgreSQL: SiPostgresql,
   Vite: SiVite,
   Vitest: SiVitest,
   Tailwindcss: SiTailwindcss,
   Bootstrap: SiBootstrap,
   "Git & GitHub": SiGithub,
   "REST APIs": MdApi,
+  TypeScript: SiTypescript,
+  Docker: SiDocker,
+  Jest: SiJest,
 };

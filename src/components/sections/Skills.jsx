@@ -11,6 +11,7 @@ const Skills = () => {
       skills.find((s) => s.name === "HTML"),
       skills.find((s) => s.name === "CSS"),
       skills.find((s) => s.name === "JavaScript"),
+      skills.find((s) => s.name === "TypeScript"),
       skills.find((s) => s.name === "React"),
       skills.find((s) => s.name === "Tailwindcss"),
     ].filter(Boolean),
@@ -23,7 +24,7 @@ const Skills = () => {
       skills.find((s) => s.name === "Git & GitHub"),
       skills.find((s) => s.name === "Vite"),
       skills.find((s) => s.name === "Vitest"),
-      skills.find((s) => s.name === "Postman"),
+      skills.find((s) => s.name === "Docker"),
     ].filter(Boolean),
   };
 
@@ -94,7 +95,7 @@ const Skills = () => {
 
                   {/* Skills List */}
                   <div className="space-y-5">
-                    {categorySkills.map((skill, skillIndex) => {
+                    {categorySkills.map((skill) => {
                       const IconComponent = skill.icon;
                       const proficiency = getProficiencyLevel(skill.level);
 
@@ -119,7 +120,7 @@ const Skills = () => {
                             {/* Skill Level Badge */}
                             <span
                               className={`text-xs px-2 py-1 rounded-full border ${getLevelColor(
-                                skill.level
+                                skill.level,
                               )}`}
                             >
                               {skill.level}
@@ -142,7 +143,7 @@ const Skills = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/5 group-hover:to-primary/20 rounded-2xl transition-all duration-300 pointer-events-none"></div>
                 </div>
               </Fadein>
-            )
+            ),
           )}
         </div>
       </div>
