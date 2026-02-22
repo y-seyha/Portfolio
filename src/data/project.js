@@ -16,7 +16,7 @@ export const projects = [
       "An Expense Tracker built using Mern Stack. It allows users to add, track, and manage their daily expenses with a clear summary of income and spending.",
     image: "/dashboard-01-scaled.png",
     category: "FullStack",
-    technologies: ["React", "Tailwind", "NodeJS", "MongoDB"],
+    technologies: ["React", "Tailwind", "NodeJS", "ExpressJS", "MongoDB"],
     githubUrl: "https://github.com/y-seyha/Expense-Tracker",
   },
   {
@@ -24,11 +24,35 @@ export const projects = [
     title: "Food Delivery",
     description:
       "A modern full-stack food delivery web application that allows users to browse restaurants, place orders, manage profiles, and track deliveries through a secure and user-friendly interface.",
-    image: "/food-delivery.png",
+    image: "/foodDelivery.png",
     category: "FullStack",
-    technologies: ["React", "Tailwind", "NodeJS", "MongoDB"],
+    technologies: [
+      "React",
+      "Tailwind",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Vitest",
+    ],
     githubUrl: "https://github.com/y-seyha/Food-Delivery-FrontedEnd",
     link: "https://food-delivery-app-ten-pink.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Human Resource Management System (Under Developement)",
+    description:
+      "HRM Backend is a RESTful API server built to power a Human Resource Management system. It handles employee records, payroll processing, leave management, and authentication with secure and structured architecture.",
+    image: "/hrm.png",
+    category: "FullStack",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "NodeJS",
+      "ExpressJS",
+      "PostgresSQL",
+    ],
+    githubUrl: "https://github.com/y-seyha/HRM-Frontend",
   },
 ];
 
