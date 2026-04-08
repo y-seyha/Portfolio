@@ -55,16 +55,17 @@ const Project = () => {
             <div
               className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-lg 
                       hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2
-                     min-h-[480px] flex flex-col
-"
+                     min-h-[480px] flex flex-col"
             >
-              {/* Project Image */}
+              {/* Image Container */}
               {project.image && (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 sm:h-56 md:h-60 object-cover rounded-t-2xl transition-transform duration-500 group-hover:scale-105"
-                />
+                <div className="w-full h-48 sm:h-56 md:h-60 overflow-hidden rounded-t-2xl">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-contain transition-transform duration-500"
+                  />
+                </div>
               )}
 
               {/* Project Info */}
@@ -88,6 +89,7 @@ const Project = () => {
                   ))}
                 </div>
 
+                {/* Links */}
                 <div className="mt-3 flex flex-wrap gap-2 mb-4 md:mb-0">
                   {project.githubUrl && (
                     <a

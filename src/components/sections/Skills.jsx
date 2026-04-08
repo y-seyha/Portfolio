@@ -1,6 +1,5 @@
 import React from "react";
 import { skills } from "../../data/skills";
-import { ICONS } from "../../data/icons";
 import * as Icons from "lucide-react";
 import Fadein from "../Animation/Fadein";
 
@@ -18,6 +17,7 @@ const Skills = () => {
     "Backend & API": [
       skills.find((s) => s.name === "NodeJS"),
       skills.find((s) => s.name === "ExpressJS"),
+      skills.find((s) => s.name === "NestJs"),
       skills.find((s) => s.name === "REST APIs"),
     ].filter(Boolean),
     "Tools and Others": [

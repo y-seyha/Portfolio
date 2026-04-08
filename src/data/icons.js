@@ -1,11 +1,10 @@
 import { Code, Palette, Database } from "lucide-react";
-import {} from "react-icons/si";
-
+import { FaJava ,FaReact} from "react-icons/fa";
+import { PiFileCSharp } from "react-icons/pi";
 import {
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiReact,
   SiNodedotjs,
   SiExpress,
   SiMongodb,
@@ -20,6 +19,8 @@ import {
   SiTypescript,
   SiDocker,
   SiJest,
+  SiNextdotjs,
+  SiNestjs,
 } from "react-icons/si";
 import { MdApi } from "react-icons/md";
 
@@ -27,19 +28,23 @@ export const ICONS = {
   HTML: SiHtml5,
   CSS: SiCss3,
   JavaScript: SiJavascript,
-  React: SiReact,
+  TypeScript: SiTypescript,
+  Java: FaJava,
+  "C#": PiFileCSharp,
+  React: FaReact,
+  NextJs: SiNextdotjs,
+  Tailwindcss: SiTailwindcss,
+  Bootstrap: SiBootstrap,
   NodeJS: SiNodedotjs,
   ExpressJS: SiExpress,
+  NestJs: SiNestjs,
   MongoDB: SiMongodb,
   MySQL: SiMysql,
   PostgreSQL: SiPostgresql,
+  "REST APIs": MdApi,
   Vite: SiVite,
   Vitest: SiVitest,
-  Tailwindcss: SiTailwindcss,
-  Bootstrap: SiBootstrap,
-  "Git & GitHub": SiGithub,
-  "REST APIs": MdApi,
-  TypeScript: SiTypescript,
-  Docker: SiDocker,
   Jest: SiJest,
+  "Git & GitHub": SiGithub,
+  Docker: SiDocker,
 };
