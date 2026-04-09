@@ -62,7 +62,7 @@ export const projects = [
     title: "Book Store",
     description:
       "An online bookstore where users can browse, search, and add books to their cart. Built with Next.js, NestJS, and integrated authentication for a secure and smooth shopping experience.",
-    image: "/ecommerce.png",
+    image: "/bookstore.png",
     category: "FullStack",
     technologies: [
       "NextJs",
