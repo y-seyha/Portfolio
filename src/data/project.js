@@ -74,6 +74,7 @@ export const projects = [
       "Postgresql",
     ],
     githubUrl: "https://github.com/y-seyha/Book-Store-Backend",
+    link: "https://ys-bookstore.vercel.app",
   },
   {
     id: 2,
